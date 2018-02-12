@@ -30,7 +30,7 @@ sudo cp /etc/apache2/sites-enabled/000-default.conf /etc/apache2/sites-enabled/0
 #change path in 000-default.conf 
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 
-    #change all data from 000-default.conf to below, make sure paths are correct
+#change all data from 000-default.conf to below, make sure paths are correct
 
 #    WSGIDaemonProcess www-data
 #   WSGIProcessGroup www-data
@@ -46,7 +46,7 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
 #change path in apache2.conf
 sudo nano /etc/apache2/apache2.conf
 
-    #copy all lines below into apache2.conf, make sure paths are correct and tabs are equal to other (see in nano editor)
+#copy all lines below into apache2.conf, make sure paths are correct and tabs are equal to other (see in nano editor)
 
 #<Directory /home/administrator/Desktop/vatic/vatic/>
 #        Options Indexes FollowSymLinks
@@ -79,7 +79,7 @@ printf "\n----------------------\n\n"
 turkic status --verify
 printf "\n----------------------\n\n"
 
-sudo usermod -a -G $USER www-data #change administrator to your system name
+sudo usermod -a -G $USER www-data
 sudo mkdir /var/www/.python-eggs/
 sudo chown www-data:www-data /var/www/.python-eggs/
 sudo apache2ctl graceful
